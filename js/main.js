@@ -63,50 +63,20 @@ window.addEventListener('scroll', () => {
   });
 });
 
-// Form submission - AJAX to FormSubmit.co
+// Form submission - traditional POST (most reliable)
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const btn = document.getElementById('submitBtn');
+  // Check if redirected back after successful submission
+  if (window.location.search.includes('sent=ok')) {
     const msg = document.getElementById('formMsg');
-    const originalText = btn.textContent;
-    btn.textContent = '发送中...';
-    btn.disabled = true;
-
-    try {
-      const formData = new FormData(contactForm);
-      const response = await fetch(contactForm.action, {
-        method: 'POST',
-        body: formData
-      });
-
-      if (response.ok) {
-        msg.textContent = '✓ 询盘已发送！我们会尽快回复您。';
-        msg.style.display = 'block';
-        msg.style.color = '#4CAF50';
-        btn.textContent = '✓ 已发送';
-        btn.style.background = '#1b6b2e';
-        btn.style.borderColor = '#1b6b2e';
-        contactForm.reset();
-        setTimeout(() => {
-          btn.textContent = originalText;
-          btn.style.background = '';
-          btn.style.borderColor = '';
-          btn.disabled = false;
-          msg.style.display = 'none';
-        }, 5000);
-      } else {
-        throw new Error('Network error');
-      }
-    } catch (err) {
-      msg.textContent = '发送失败，请直接发邮件至 fhao40002@gmail.com';
+    if (msg) {
+      msg.textContent = '✓ 询盘已发送！我们会尽快回复您。';
       msg.style.display = 'block';
-      msg.style.color = '#cc4444';
-      btn.textContent = originalText;
-      btn.disabled = false;
+      msg.style.color = '#4CAF50';
     }
-  });
+    // Clean URL
+    window.history.replaceState({}, document.title, window.location.pathname);
+  }
 }
 
 // Smooth counter animation for stats

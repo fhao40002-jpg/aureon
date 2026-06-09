@@ -1,0 +1,28 @@
+// === 粘贴到 script.google.com → 部署为 Web 应用 ===
+function doPost(e) {
+  var data = e.parameter;
+  var html = `
+    <h2>秀威供应链 · 新询盘</h2>
+    <table border="1" cellpadding="8" style="border-collapse:collapse;width:100%;max-width:600px;">
+      <tr><td><b>姓名</b></td><td>${data['姓名'] || '-'}</td></tr>
+      <tr><td><b>公司</b></td><td>${data['公司'] || '-'}</td></tr>
+      <tr><td><b>邮箱</b></td><td>${data['邮箱'] || '-'}</td></tr>
+      <tr><td><b>品类</b></td><td>${data['品类'] || '-'}</td></tr>
+      <tr><td><b>留言</b></td><td>${data['留言'] || '-'}</td></tr>
+      <tr><td><b>时间</b></td><td>${new Date().toLocaleString('zh-CN')}</td></tr>
+    </table>
+  `;
+  
+  MailApp.sendEmail({
+    to: "fhao40002@gmail.com",
+    subject: "秀威供应链 · 新询盘 from " + (data['姓名'] || 'Unknown'),
+    htmlBody: html
+  });
+  
+  return ContentService.createTextOutput(JSON.stringify({ok:true}))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet() {
+  return ContentService.createTextOutput("Form backend is running.");
+}
