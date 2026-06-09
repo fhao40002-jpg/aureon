@@ -3,251 +3,247 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="秀威供应链 — 全球大宗商品贸易服务商 | 原油 · 矿产品 · 摩托车/ATV">
-<title>秀威供应链 | Xiuwei Supply Chain — 全球大宗贸易</title>
+<meta name="description" content="Xiuwei Supply Chain — Global Commodity Trading: Crude Oil, Minerals, Motorcycles & ATV">
+<title>秀威供应链 | Xiuwei Supply Chain — Global Commodity Trading</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ====== NAVIGATION ====== -->
+<!-- NAV -->
 <nav class="navbar">
-  <a href="index.html" class="logo">XIUWEI<span>.</span></a>
+  <a href="index.html" class="logo">XIUWEI<span>.</span><small>Supply Chain</small></a>
   <button class="mobile-toggle" onclick="toggleMenu()" aria-label="Menu">☰</button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html" class="active">首页</a></li>
-    <li><a href="#services">业务板块</a></li>
-    <li><a href="#flow">贸易流程</a></li>
-    <li><a href="#about">关于我们</a></li>
-    <li><a href="#contact">联系我们</a></li>
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="oil.html">Crude Oil</a></li>
+    <li><a href="minerals.html">Minerals</a></li>
+    <li><a href="motorcycles.html">Motorcycles</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
-<!-- ====== HERO ====== -->
+<!-- HERO -->
 <section class="hero">
   <div class="hero-content">
     <h1>
-      <span class="en">GLOBAL COMMODITIES</span>
+      <span class="en">GLOBAL COMMODITIES TRADING</span>
       连接全球<span class="gold">大宗商品</span>贸易
     </h1>
     <p class="subtitle">
-      深耕原油、矿产品、摩托车三大板块，依托重庆区位优势与中亚/东南亚双通道，
-      为中国及全球客户提供专业的大宗贸易居间与供应链服务
+      Bridging markets across Asia, Russia, and the Middle East — we specialize in crude oil, mineral resources, and vehicle export from China's manufacturing heartland.
+      <br><br>
+      深耕原油、矿产品、摩托车三大板块 · 重庆为基地 · 辐射中亚、东南亚、中东
     </p>
-    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-      <a href="#services" class="btn btn-primary">了解业务</a>
-      <a href="#contact" class="btn btn-outline">商务洽谈</a>
+    <div class="hero-cta">
+      <a href="#services" class="btn btn-primary">Explore Business</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
     <div class="stats">
       <div class="stat-item">
         <div class="stat-num">3</div>
-        <div class="stat-label">核心业务板块</div>
+        <div class="stat-label">Core Sectors / 核心板块</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">15+</div>
-        <div class="stat-label">覆盖国家和地区</div>
+        <div class="stat-label">Countries Covered / 覆盖国家</div>
       </div>
       <div class="stat-item">
         <div class="stat-num">$50M+</div>
-        <div class="stat-label">年度贸易撮合规模</div>
+        <div class="stat-label">Annual Trade Volume / 年度规模</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== SERVICES ====== -->
+<!-- SERVICES -->
 <section class="section" id="services">
   <div class="section-header">
-    <span class="tag">Our Business</span>
-    <h2>三大核心<span class="gold">业务板块</span></h2>
-    <p>聚焦高价值大宗商品，为您提供从货源对接到交易执行的全链路服务</p>
+    <span class="tag">Our Business · 核心业务</span>
+    <h2>Three <span class="gold">Core Sectors</span><br><small>三大核心板块</small></h2>
+    <p>End-to-end commodity trading services — from supplier sourcing to delivery settlement</p>
   </div>
   <div class="services-grid">
 
-    <!-- 原油 -->
-    <a href="oil.html" class="service-card" style="text-decoration:none;">
-      <div class="service-icon">🛢️</div>
-      <h3>原油贸易</h3>
-      <p>俄罗斯 ESPO 混合原油 · 乌拉尔原油 · 中东原油</p>
-      <ul class="features">
-        <li>ESPO 现货 & 长期合约</li>
-        <li>DES 山东 / CIF 中国口岸</li>
-        <li>人民币 CIPS 结算通道</li>
-        <li>科兹米诺港直发，4天到港</li>
-      </ul>
+    <a href="oil.html" class="service-card">
+      <div class="service-img oil-bg"></div>
+      <div class="service-body">
+        <h3>🛢️ Crude Oil <small>原油贸易</small></h3>
+        <p>Russian ESPO Blend · Urals · Spot &amp; Term Contracts</p>
+        <ul class="features">
+          <li>ESPO spot cargo from Kozmino — 4 days to Shandong</li>
+          <li>RMB CIPS settlement available</li>
+          <li>Direct producer &amp; Dubai intermediary channels</li>
+        </ul>
+      </div>
     </a>
 
-    <!-- 矿产品 -->
-    <a href="minerals.html" class="service-card" style="text-decoration:none;">
-      <div class="service-icon">⛏️</div>
-      <h3>矿产品贸易</h3>
-      <p>钨精矿 · 钨铁 · APT · 稀有金属</p>
-      <ul class="features">
-        <li>钨矿国内撮合 & 海外对接</li>
-        <li>赣州/郴州矿区直采</li>
-        <li>越南/韩国非中国货源</li>
-        <li>半导体级钨材料供应</li>
-      </ul>
+    <a href="minerals.html" class="service-card">
+      <div class="service-img minerals-bg"></div>
+      <div class="service-body">
+        <h3>⛏️ Minerals <small>矿产品贸易</small></h3>
+        <p>Tungsten Concentrate · APT · Ferro-Tungsten · Rare Metals</p>
+        <ul class="features">
+          <li>Ganzhou &amp; Chenzhou mining district direct sourcing</li>
+          <li>Vietnam &amp; Korea non-China supply channels</li>
+          <li>Global buyer network: EU, US, Japan, Korea</li>
+        </ul>
+      </div>
     </a>
 
-    <!-- 摩托车 -->
-    <a href="motorcycles.html" class="service-card" style="text-decoration:none;">
-      <div class="service-icon">🏍️</div>
-      <h3>摩托车 & ATV</h3>
-      <p>重庆造 · 全地形车 · 越野摩托 · 出口俄罗斯</p>
-      <ul class="features">
-        <li>重庆7大厂商直供</li>
-        <li>ATV/UTV 50cc-800cc</li>
-        <li>EAC 认证齐全</li>
-        <li>俄罗斯/中亚/中东出口</li>
-      </ul>
+    <a href="motorcycles.html" class="service-card">
+      <div class="service-img moto-bg"></div>
+      <div class="service-body">
+        <h3>🏍️ Motorcycles &amp; ATV <small>摩托车·全地形车</small></h3>
+        <p>Chongqing-made · ATV/UTV 50cc-800cc · Export to Russia &amp; Central Asia</p>
+        <ul class="features">
+          <li>7 major Chongqing factories direct supply</li>
+          <li>EAC / EPA / EEC certified</li>
+          <li>72% market share in Russia for Chinese brands</li>
+        </ul>
+      </div>
     </a>
   </div>
 </section>
 
-<!-- ====== TRADE FLOW ====== -->
+<!-- FLOW -->
 <section class="section" id="flow" style="background:var(--bg2);">
   <div class="section-header">
-    <span class="tag">Process</span>
-    <h2>贸易<span class="gold">服务流程</span></h2>
-    <p>透明、高效、合规——从需求匹配到交易完成</p>
+    <span class="tag">Process · 服务流程</span>
+    <h2>How We <span class="gold">Work</span><br><small>贸易服务流程</small></h2>
+    <p>Transparent, efficient, compliant — from inquiry to delivery</p>
   </div>
   <div class="trade-flow">
     <div class="flow-node">
-      <div class="node-icon">🔍</div>
-      <h4>需求对接</h4>
-      <p>明确买卖双方需求<br>规格/数量/价格</p>
+      <div class="node-icon">01</div>
+      <h4>Demand Match</h4>
+      <p>需求对接<br>Buyer &amp; seller matching</p>
     </div>
     <div class="flow-arrow">→</div>
     <div class="flow-node">
-      <div class="node-icon">📋</div>
-      <h4>货源匹配</h4>
-      <p>国内/国际货源筛选<br>资质验证 & KYC</p>
+      <div class="node-icon">02</div>
+      <h4>Source &amp; Verify</h4>
+      <p>货源验证<br>KYC &amp; due diligence</p>
     </div>
     <div class="flow-arrow">→</div>
     <div class="flow-node">
-      <div class="node-icon">📝</div>
-      <h4>合同签署</h4>
-      <p>SPA/ICPO 签署<br>交易结构设计</p>
+      <div class="node-icon">03</div>
+      <h4>Contract</h4>
+      <p>合同签署<br>SPA / ICPO execution</p>
     </div>
     <div class="flow-arrow">→</div>
     <div class="flow-node">
-      <div class="node-icon">🚢</div>
-      <h4>交付结算</h4>
-      <p>物流/清关/检验<br>人民币 CIPS 结算</p>
+      <div class="node-icon">04</div>
+      <h4>Delivery</h4>
+      <p>交付结算<br>Logistics &amp; settlement</p>
     </div>
   </div>
 </section>
 
-<!-- ====== ABOUT ====== -->
+<!-- ABOUT -->
 <section class="section" id="about">
   <div class="section-header">
-    <span class="tag">About Us</span>
-    <h2>关于<span class="gold">秀威供应链</span></h2>
+    <span class="tag">About Us · 关于我们</span>
+    <h2><span class="gold">Xiuwei</span> Supply Chain<br><small>秀威供应链</small></h2>
   </div>
-  <div style="max-width:800px;margin:0 auto;text-align:center;">
+  <div style="max-width:820px;margin:0 auto;text-align:center;">
     <p style="color:var(--text-dim);font-size:1.1rem;line-height:2;margin-bottom:2rem;">
-      秀威供应链总部位于<span class="gold">中国重庆</span>，是一家专注于大宗商品贸易居间服务的专业机构。
-      我们依托重庆独特的区位优势——<span class="gold-light">中欧班列起点</span>、
-      <span class="gold-light">西部陆海新通道枢纽</span>、<span class="gold-light">长江经济带核心节点</span>——
-      为客户搭建中亚、东南亚与中国之间的贸易桥梁。
+      Headquartered in <span class="gold">Chongqing, China</span> — the starting point of the China-Europe Railway Express and the gateway to Western China's logistics hub — Xiuwei Supply Chain is a professional commodity trading intermediary.
+      <br><br>
+      总部位于<span class="gold">中国重庆</span>——中欧班列起点、西部陆海新通道枢纽、长江经济带核心节点。
+      我们依托独特区位优势，为客户搭建中亚、东南亚与中国之间的贸易桥梁。
     </p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;">
-      <div style="text-align:center;">
-        <div style="font-size:2rem;color:var(--gold);margin-bottom:0.5rem;">🇨🇳</div>
-        <h4 style="color:var(--white);">重庆总部</h4>
-        <p style="color:var(--text-dim);font-size:0.9rem;">国际物流枢纽园区</p>
+    <div class="about-grid">
+      <div class="about-item">
+        <div class="about-icon">🇨🇳</div>
+        <h4>Chongqing HQ</h4>
+        <p>International Logistics Hub Park<br>重庆国际物流枢纽园区</p>
       </div>
-      <div style="text-align:center;">
-        <div style="font-size:2rem;color:var(--gold);margin-bottom:0.5rem;">🤝</div>
-        <h4 style="color:var(--white);">全球网络</h4>
-        <p style="color:var(--text-dim);font-size:0.9rem;">俄罗斯 · 中亚 · 东南亚 · 中东</p>
+      <div class="about-item">
+        <div class="about-icon">🌏</div>
+        <h4>Global Network</h4>
+        <p>Russia · Central Asia · SE Asia · Middle East<br>俄罗斯·中亚·东南亚·中东</p>
       </div>
-      <div style="text-align:center;">
-        <div style="font-size:2rem;color:var(--gold);margin-bottom:0.5rem;">🏦</div>
-        <h4 style="color:var(--white);">合规保障</h4>
-        <p style="color:var(--text-dim);font-size:0.9rem;">CIPS结算 · 合规审查 · 风控体系</p>
+      <div class="about-item">
+        <div class="about-icon">🏦</div>
+        <h4>Compliance</h4>
+        <p>CIPS Settlement · KYC · Risk Control<br>人民币结算·合规·风控</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ====== CONTACT ====== -->
+<!-- CONTACT -->
 <section class="section" id="contact" style="background:var(--bg2);">
   <div class="section-header">
-    <span class="tag">Contact</span>
-    <h2>商务<span class="gold">洽谈</span></h2>
-    <p>无论您是寻找货源还是拓展市场，我们期待与您合作</p>
+    <span class="tag">Contact · 联系我们</span>
+    <h2>Get in <span class="gold">Touch</span><br><small>商务洽谈</small></h2>
+    <p>Whether sourcing or expanding markets — we're ready to collaborate</p>
   </div>
   <div class="contact-grid">
     <div class="contact-info">
-      <h3>联系方式</h3>
-      <div class="info-item"><span class="icon">📍</span> 中国 · 重庆国际物流枢纽园区</div>
+      <h3>Contact Info</h3>
+      <div class="info-item"><span class="icon">📍</span> Chongqing International Logistics Hub Park, China<br><small>中国·重庆国际物流枢纽园区</small></div>
       <div class="info-item"><span class="icon">📧</span> fhao40002@gmail.com</div>
 
-      <h3 style="margin-top:1.8rem;">扫码联系</h3>
+      <h3 style="margin-top:2rem;">Scan to Connect</h3>
       <div class="qr-grid">
         <div class="qr-card">
-          <div class="qr-frame">
-            <img src="img/whatsapp.jpg" alt="WhatsApp">
-          </div>
+          <div class="qr-frame"><img src="img/whatsapp.jpg" alt="WhatsApp"></div>
           <p>WhatsApp</p>
         </div>
         <div class="qr-card">
-          <div class="qr-frame">
-            <img src="img/wechat.jpg" alt="微信">
-          </div>
-          <p>微信</p>
+          <div class="qr-frame"><img src="img/wechat.jpg" alt="WeChat"></div>
+          <p>WeChat</p>
         </div>
         <div class="qr-card">
-          <div class="qr-frame">
-            <img src="img/telegram.jpg" alt="Telegram">
-          </div>
+          <div class="qr-frame"><img src="img/telegram.jpg" alt="Telegram"></div>
           <p>Telegram</p>
         </div>
       </div>
     </div>
+
     <form class="contact-form" id="contactForm" onsubmit="return sendInquiry(event)">
+      <h3 style="color:var(--white);margin-bottom:1.2rem;">Send Inquiry <small>发送询盘</small></h3>
       <div class="form-group">
-        <label>您的姓名 *</label>
-        <input type="text" id="inqName" required placeholder="请填写姓名">
+        <label>Name / 姓名 *</label>
+        <input type="text" id="inqName" required placeholder="Your name">
       </div>
       <div class="form-group">
-        <label>公司名称</label>
-        <input type="text" id="inqCompany" placeholder="请填写公司名称">
+        <label>Company / 公司</label>
+        <input type="text" id="inqCompany" placeholder="Your company">
       </div>
       <div class="form-group">
-        <label>电子邮箱 *</label>
-        <input type="email" id="inqEmail" required placeholder="请填写邮箱">
+        <label>Email / 邮箱 *</label>
+        <input type="email" id="inqEmail" required placeholder="your@email.com">
       </div>
       <div class="form-group">
-        <label>咨询品类</label>
+        <label>Product / 咨询品类</label>
         <select id="inqCategory">
-          <option>原油 (ESPO / Urals)</option>
-          <option>矿产品 (钨矿 / 铜矿 / 其他)</option>
-          <option>摩托车 & ATV</option>
-          <option>其他大宗商品</option>
+          <option>Crude Oil / 原油</option>
+          <option>Minerals / 矿产品</option>
+          <option>Motorcycles & ATV / 摩托车</option>
+          <option>Other / 其他</option>
         </select>
       </div>
       <div class="form-group">
-        <label>留言内容</label>
-        <textarea id="inqMessage" rows="4" placeholder="请描述您的需求..."></textarea>
+        <label>Message / 留言</label>
+        <textarea id="inqMessage" rows="4" placeholder="Specification · Quantity · Delivery terms (FOB/CIF/DES) · Target price"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary" style="width:100%;">发送询盘</button>
-      <p id="formMsg" style="display:none;text-align:center;margin-top:1rem;color:var(--gold-light);font-weight:600;"></p>
+      <button type="submit" class="btn btn-primary" style="width:100%;">Send Inquiry / 发送询盘</button>
     </form>
   </div>
 </section>
 
-<!-- ====== FOOTER ====== -->
+<!-- FOOTER -->
 <footer class="footer">
   <ul class="footer-links">
-    <li><a href="index.html">首页</a></li>
-    <li><a href="oil.html">原油贸易</a></li>
-    <li><a href="minerals.html">矿产品贸易</a></li>
-    <li><a href="motorcycles.html">摩托车 & ATV</a></li>
-    <li><a href="#contact">联系我们</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="oil.html">Crude Oil</a></li>
+    <li><a href="minerals.html">Minerals</a></li>
+    <li><a href="motorcycles.html">Motorcycles</a></li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
-  <p class="copyright">© 2026 秀威供应链 Xiuwei Supply Chain. All rights reserved.</p>
+  <p class="copyright">&copy; 2026 Xiuwei Supply Chain 秀威供应链. All rights reserved.</p>
 </footer>
 
 <script src="js/main.js"></script>
