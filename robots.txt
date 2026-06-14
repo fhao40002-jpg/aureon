@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fhao40002-jpg.github.io/aureon/sitemap.xml
